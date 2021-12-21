@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATE YOUR FOOD | MENU</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    .c {
+        padding-bottom: 4rem;
+        margin-left: 40%;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: #ff3838;
+    }
+    body{
+        background: url("inside/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-color: transparent;
+        /* color: rgb(255, 254, 254); */
+    }
+
+    .ut {
+        margin-top: -10.5%;
+        margin-left: 26%;
+        display: flex;
+        position: absolute;
+        opacity: 3;
+        z-index: -1;
+        /* background-color: transparent; */
+
+    }
+    .ut1{
+        margin-top: -10.5%;
+        margin-left: 48%;
+        display:flex;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: .2rem 3rem;
+        border: .1rem solid rgb(182, 66, 114);
+        color: var(--red);
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        margin-top: 1rem;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        color: #fff;
+        background-color: red;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    .menu {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
+
+    .menu-group-heading {
+        margin: 0;
+        padding-bottom: 1em;
+        border-bottom: 2px solid #ccc;
+        padding-top: 2em;
+    }
+
+    .menu-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.5em;
+        padding: 2em 0;
+    }
+
+    .menu-item {
+        display: flex;
+    }
+
+    .menu-item-image {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        object-fit: cover;
+        margin-right: 1.5em;
+    }
+
+    .menu-item-price {
+        margin-right: 20%;
+    }
+
+    .menu-item-text {
+        flex-grow: 1;
+    }
+
+    .menu-item-heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .menu-item-name {
+        margin-right: 1.5em;
+    }
+
+    .menu-item-description {
+        line-height: 1.6;
+    }
+
+    @media screen and (min-width: 992px) {
+        .menu {
+            font-size: 16px;
+        }
+
+        .menu-group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .menu-item-image {
+            width: 125px;
+            height: 125px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1 class="c">FOOD MENU</h1>
+            <img class="ut" src="inside\ut.jpg" alt="" width="90px" height="90px">
+            <img class="ut1" src="inside\ut.jpg" alt="" width="90px" height="90px">
+            <h2 class="menu-group-heading">Starters</h2>
+            <div class="menu-group">
+
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\samosa.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">samosas</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\dosa.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Dosa</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\Soft-Dahi-Vada-Recipe.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Dahi vada</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\paneer tikka.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Paneer tikki</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\veg roll.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Veg roll</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\egg roll.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Egg Roll</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\masala maggi.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Masala Maggi</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside\Vada Pav.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Vada Pav</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="menu-group-heading">
+                Main Course
+            </h2>
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/rice.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Rice</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/dal fry.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Dal Fry</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/vb.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Veg Biryani</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/mp.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Matar Paneer</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/Fish fry.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Fish Fry</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/CC.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Chicken curry</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="menu-group-heading">
+                Dessert
+            </h2>
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/gulab j.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">gulab jamun</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-item-image" src="inside/Halwa.jpg" alt="Bruschetta">
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">halwa</span>
+                            <span class="menu-item-price">100/-</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
+                            congue eu mauris nec, pretium tincidunt nulla.
+                        </p>
+                        <a href="#" class="btn">order now</a>&nbsp;&nbsp;&nbsp;<a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
